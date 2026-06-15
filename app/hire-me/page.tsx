@@ -1,7 +1,6 @@
-"use client";
 import type { Metadata } from "next";
-import { useMemo, useState } from "react";
-import { profile, roleGroups, contractTypes } from "@/data/profile";
+import { profile } from "@/data/profile";
+import HireMeContent from "./HireMeContent";
 
 export const metadata: Metadata = {
   title: "Hire Me — Richard Kuthita",
@@ -14,54 +13,14 @@ export const metadata: Metadata = {
   },
 };
 
-// WhatsApp number — no + or spaces
-const WA_NUMBER = "254742450802";
-
-function buildMessage(contract: string | null, roles: string[]) {
-  const lines = [
-    `Hi ${profile.name.split(" ")[0]}! I came across your portfolio and I'd like to discuss an opportunity.`,
-    "",
-    `*Engagement type:* ${contract ?? "(not yet specified)"}`,
-    "",
-    "*Role(s) of interest:*",
-    ...(roles.length ? roles.map((r) => `• ${r}`) : ["• (not yet specified)"]),
-    "",
-    "Please let me know your availability. Looking forward to connecting!",
-  ];
-  return lines.join("\n");
-}
-
 export default function HireMePage() {
-  const [contractType, setContractType] = useState<string | null>(null);
-  const [selectedRoles, setSelectedRoles] = useState<Set<string>>(new Set());
-  const [sent, setSent] = useState<"whatsapp" | "email" | null>(null);
-
-  const allRoles = useMemo(() => roleGroups.flatMap((g) => g.roles), []);
-
-  function toggleRole(id: string) {
-    setSelectedRoles((prev) => {
-      const next = new Set(prev);
-      next.has(id) ? next.delete(id) : next.add(id);
-      return next;
-    });
-  }
-
-  const chosenContract = contractTypes.find((c) => c.id === contractType)?.title ?? null;
-  const chosenRoles    = allRoles.filter((r) => selectedRoles.has(r.id)).map((r) => r.title);
-  const hasSelection   = !!contractType && chosenRoles.length > 0;
-
-  const message = buildMessage(chosenContract, chosenRoles);
-
-  const waHref = `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(message)}`;
-  const emailHref = `mailto:${profile.email}?subject=${encodeURIComponent(`Opportunity for ${profile.name}`)}&body=${encodeURIComponent(message)}`;
-
   return (
-    <div className="mx-auto max-w-5xl px-4 sm:px-6 py-12 sm:py-16">
+    <div className="mx-auto max-w-4xl px-4 sm:px-6 py-12 sm:py-16">
       <h1 className="font-display text-2xl sm:text-3xl font-bold text-navy-deep dark:text-dk-ink">Hire Me</h1>
-      <p className="mt-3 max-w-2xl text-sm sm:text-base text-slate dark:text-dk-slate">
-        Build a quick spec of what you need — choose an engagement type and the role(s) that fit.
-        The summary updates live and you can send it straight to me via WhatsApp or Email.
-      </p>
+      <HireMeContent />
+    </div>
+  );
+}
 
       {/* Step 1: Contract type */}
       <section className="mt-10">
