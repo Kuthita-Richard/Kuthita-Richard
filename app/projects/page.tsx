@@ -1,7 +1,19 @@
 "use client";
+import type { Metadata } from "next";
 import { useEffect, useState } from "react";
 import { fetchGithubRepos, type GithubRepo } from "@/lib/github";
 import { profile } from "@/data/profile";
+
+export const metadata: Metadata = {
+  title: "Projects — Richard Kuthita",
+  description: `Portfolio of ${profile.name}'s projects including ${profile.skills.frontend.join(", ")} work. View all GitHub repositories and technical work.`,
+  keywords: ["projects", "portfolio", "GitHub", "React", "Next.js", "TypeScript", "full stack"],
+  openGraph: {
+    title: "Projects — Richard Kuthita",
+    description: `Portfolio of ${profile.name}'s projects and technical work.`,
+    url: "https://kuthita-richard.vercel.app/projects",
+  },
+};
 
 export default function ProjectsPage() {
   const [repos, setRepos] = useState<GithubRepo[] | null>(null);

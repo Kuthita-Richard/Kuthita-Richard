@@ -1,0 +1,7 @@
+# Allow all bots to crawl the site
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Sitemap location
+Sitemap: https://kuthita-richard.vercel.app/sitemap.xml

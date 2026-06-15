@@ -1,6 +1,18 @@
 "use client";
+import type { Metadata } from "next";
 import { useMemo, useState } from "react";
 import { profile, roleGroups, contractTypes } from "@/data/profile";
+
+export const metadata: Metadata = {
+  title: "Hire Me — Richard Kuthita",
+  description: `Hire ${profile.name} for your next project. Select engagement type and role preferences. Java Developer, Frontend Developer, Full Stack Engineer.`,
+  keywords: ["hire", "freelance", "contract", "Java developer", "frontend developer", "React developer"],
+  openGraph: {
+    title: "Hire Me — Richard Kuthita",
+    description: `Hire ${profile.name} for your next project. Discuss engagement opportunities.`,
+    url: "https://kuthita-richard.vercel.app/hire-me",
+  },
+};
 
 // WhatsApp number — no + or spaces
 const WA_NUMBER = "254742450802";
