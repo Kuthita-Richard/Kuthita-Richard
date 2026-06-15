@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: "Inter", sans-serif;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Circuit-trace divider */
+.trace-line { height: 1px; background: linear-gradient(90deg, transparent, #D8DEE9 15%, #D8DEE9 85%, transparent); }
+.dark .trace-line { background: linear-gradient(90deg, transparent, #162840 15%, #162840 85%, transparent); }
+
+.trace { display: flex; align-items: center; }
+.trace-segment { flex: 1; height: 1px; background: #D8DEE9; }
+.dark .trace-segment { background: #162840; }
+.trace-segment.active { background: #C9A24B; }
+.dark .trace-segment.active { background: #D4B05C; }
+
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid #C9A24B; outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+}
