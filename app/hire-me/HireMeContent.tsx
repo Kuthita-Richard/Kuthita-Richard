@@ -41,9 +41,9 @@ export default function HireMeContent() {
             <h2 className="font-display font-bold text-navy-deep dark:text-dk-ink">Engagement Type</h2>
             <div className="mt-4 space-y-2">
               {contractTypes.map((type) => (
-                <label key={type} className="flex cursor-pointer items-center gap-3 rounded border border-line dark:border-dk-line p-3 hover:bg-surface dark:hover:bg-dk-surface transition-colors">
-                  <input type="radio" name="contract" value={type} checked={selectedContract === type} onChange={(e) => setSelectedContract(e.target.value)} className="cursor-pointer" />
-                  <span className="text-sm">{type}</span>
+                <label key={type.id} className="flex cursor-pointer items-center gap-3 rounded border border-line dark:border-dk-line p-3 hover:bg-surface dark:hover:bg-dk-surface transition-colors">
+                  <input type="radio" name="contract" value={type.id} checked={selectedContract === type.id} onChange={(e) => setSelectedContract(e.target.value)} className="cursor-pointer" />
+                  <span className="text-sm">{type.title}</span>
                 </label>
               ))}
             </div>
@@ -54,13 +54,13 @@ export default function HireMeContent() {
             <h2 className="font-display font-bold text-navy-deep dark:text-dk-ink">Roles</h2>
             <div className="mt-4 space-y-3">
               {roleGroups.map((group) => (
-                <div key={group.category}>
-                  <p className="font-mono text-xs uppercase tracking-widest text-slate dark:text-dk-slate">{group.category}</p>
+                <div key={group.track}>
+                  <p className="font-mono text-xs uppercase tracking-widest text-slate dark:text-dk-slate">{group.track}</p>
                   <div className="mt-2 space-y-2 pl-0">
                     {group.roles.map((role) => (
-                      <label key={role} className="flex cursor-pointer items-center gap-3">
-                        <input type="checkbox" checked={selectedRoles.includes(role)} onChange={(e) => setSelectedRoles(e.target.checked ? [...selectedRoles, role] : selectedRoles.filter((r) => r !== role))} className="cursor-pointer" />
-                        <span className="text-sm">{role}</span>
+                      <label key={role.id} className="flex cursor-pointer items-center gap-3">
+                        <input type="checkbox" checked={selectedRoles.includes(role.id)} onChange={(e) => setSelectedRoles(e.target.checked ? [...selectedRoles, role.id] : selectedRoles.filter((r) => r !== role.id))} className="cursor-pointer" />
+                        <span className="text-sm">{role.title}</span>
                       </label>
                     ))}
                   </div>
