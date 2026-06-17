@@ -4,4 +4,4 @@ Allow: /
 Disallow: /api/
 
 # Sitemap location
-Sitemap: https://kuthita-richard.vercel.app/sitemap.xml
+Sitemap: https://richardkuthita.vercel.app/sitemap.xml
