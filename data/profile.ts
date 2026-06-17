@@ -3,7 +3,7 @@
 
 export const profile = {
   name: "Richard Kuthita M.",
-  tagline: "Java Engineer | Frontend Developer",
+  tagline: "Computer Technology Engineer | Java Engineer | Frontend Developer",
   location: "Maseno, Kenya",
   phone: "+254 742 450 802",
   email: "richardcodescode@gmail.com",
@@ -12,13 +12,13 @@ export const profile = {
   githubUsername: "Kuthita-Richard",
 
   summary:
-    "Motivated Computer Engineering student at Maseno University pursuing a BSc in Computer Science and Technology. Experienced in Java development and modern frontend web technologies including Next.js, React, and TypeScript, with foundational knowledge in circuit design and digital electronics. Demonstrated ability to lead frontend development teams, deliver full-featured web platforms, and integrate third-party payment systems. Currently leveling up across AI, Machine Learning, and Web3 (blockchain) — exploring decentralized reasoning and the next generation of learning models.",
+    "Teaching Machines To Argue On The Blockchain - Computer Technology Engineer. Experienced in Java development and modern frontend web technologies including Next.js, React, and TypeScript, with foundational knowledge in circuit design and digital electronics:- Embedded systems, microprocessor architecture and digital systems design. Currently leveling up across AI, Machine Learning, and Web3 (blockchain) — exploring decentralized reasoning and the next generation of learning models.",
 
   skills: {
     languages: ["Java", "TypeScript", "JavaScript", "Python (learning)", "Solidity (learning)"],
     frontend: ["Next.js", "React", "TypeScript", "Tailwind CSS", "shadcn-ui", "Zustand", "Recharts"],
     tools: ["Vite", "Docker", "nginx", "Git", "Version Control"],
-    hardware: ["Circuit Design", "Digital Electronics", "Microcontrollers", "PCB Basics", "Logic Gates"],
+    hardware: ["Circuit Design", "Embedded systems", "Digital Systems Design", "Microprocessor Architecture", "Digital Electronics", "Microcontrollers", "PCB Basics", "Logic Gates"],
     domains: [
       "Enterprise Resource Planning (ERP)",
       "B2B SaaS",
@@ -30,8 +30,8 @@ export const profile = {
     emerging: [
       "Artificial Intelligence",
       "Machine Learning",
-      "Web3 / Blockchain",
-      "Decentralized Reasoning Systems",
+      "Web3.0 / Blockchain",
+      "Learning Decentralized Reasoning Systems",
     ],
   },
 
