@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Projects — Richard Kuthita",
     description: `Portfolio of ${profile.name}'s projects and technical work.`,
-    url: "https://kuthita-richard.vercel.app/projects",
+    url: "https://richardkuthita.vercel.app/projects",
   },
 };
 
@@ -21,11 +21,5 @@ export default function ProjectsPage() {
     </div>
   );
 }
-              </div>
-            </article>
-          );
-        })}
-      </div>
-    </div>
   );
 }
