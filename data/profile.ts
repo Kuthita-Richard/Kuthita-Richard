@@ -7,7 +7,7 @@ export const profile = {
   location: "Maseno, Kenya",
   phone: "+254 742 450 802",
   email: "richardcodescode@gmail.com",
-  linkedin: "linkedin.com/in/richard-kuthita",
+  linkedin: "linkedin.com/in/richard-kuthita-583b45270",
   github: "github.com/Kuthita-Richard",
   githubUsername: "Kuthita-Richard",
 
