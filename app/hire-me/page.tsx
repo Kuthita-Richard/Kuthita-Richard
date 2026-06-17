@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Hire Me — Richard Kuthita",
     description: `Hire ${profile.name} for your next project. Discuss engagement opportunities.`,
-    url: "https://kuthita-richard.vercel.app/hire-me",
+    url: "https://richardkuthita.vercel.app/hire-me",
   },
 };
 
