@@ -12,7 +12,7 @@ export const profile = {
   githubUsername: "Kuthita-Richard",
 
   summary:
-    "Teaching Machines To Argue On The Blockchain - Computer Technology Engineer. Experienced in Java development and modern frontend web technologies including Next.js, React, and TypeScript, with foundational knowledge in circuit design and digital electronics:- Embedded systems, microprocessor architecture and digital systems design. Currently leveling up across AI, Machine Learning, and Web3 (blockchain) — exploring decentralized reasoning and the next generation of learning models.",
+    "Currently Teaching Machines To Argue On The Blockchain, <br /> - Computer Technology Engineer. Experienced in Java development and modern frontend web technologies including Next.js, React, and TypeScript, with foundational knowledge in circuit design and digital electronics:- Embedded systems, microprocessor architecture and digital systems design. Currently leveling up across AI, Machine Learning, and Web3 (blockchain) — exploring decentralized reasoning and the next generation of learning models.",
 
   skills: {
     languages: ["Java", "TypeScript", "JavaScript", "Python (learning)", "Solidity (learning)"],
@@ -20,6 +20,7 @@ export const profile = {
     tools: ["Vite", "Docker", "nginx", "Git", "Version Control"],
     hardware: ["Circuit Design", "Embedded systems", "Digital Systems Design", "Microprocessor Architecture", "Digital Electronics", "Microcontrollers", "PCB Basics", "Logic Gates"],
     domains: [
+      "Systems Engineering",
       "Enterprise Resource Planning (ERP)",
       "B2B SaaS",
       "B2C SaaS",
