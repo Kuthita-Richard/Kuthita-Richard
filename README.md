@@ -1,9 +1,9 @@
-﻿# Richard Kuthita — Portfolio
+﻿# Richard Kuthita — Welcome to my Portfolio
  https://richardkuthita.vercel.app/
 
-Built with **Next.js 16** (App Router, Turbopack) + **React 19** + **TypeScript** + **Tailwind CSS**.
+This project is Built with **Next.js 16** (App Router, Turbopack) + **React 19** + **TypeScript** + **Tailwind CSS**.
 
-## Features
+## Features in each page
 
 - **Profile page** — summary, skills, competencies, education A(from `data/profile.ts`)
 - **Projects page** — fetched live, client-side, from the GitHub public API (`api.github.com/users/Kuthita-Richard/repos`). When I Push a new public repo on my github, it appears here automatically.
