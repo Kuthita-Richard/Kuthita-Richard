@@ -1,5 +1,5 @@
 ﻿# Richard Kuthita — Welcome to my Portfolio
- https://richardkuthita.vercel.app/
+ https://www.richardkuthita.com/
 
 This project is Built with **Next.js 16** (App Router, Turbopack) + **React 19** + **TypeScript** + **Tailwind CSS**.
 
