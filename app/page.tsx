@@ -16,7 +16,7 @@ export default function Home() {
             {profile.name}
           </h1>
           <p className="mt-2 font-display text-base sm:text-lg text-navy dark:text-dk-navy">{profile.tagline}</p>
-          <p className="mt-5 text-sm sm:text-base text-slate dark:text-dk-slate leading-relaxed max-w-2xl whitespace-pre-line">
+          <p className="mt-5 text-sm sm:text-base text-slate dark:text-dk-slate leading-relaxed max-w-2xl whitespace-pre-line text-justify">
             {profile.summary}
           </p>
           <div className="mt-8 flex flex-wrap gap-3 font-mono text-sm">
