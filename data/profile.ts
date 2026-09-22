@@ -12,8 +12,7 @@ export const profile = {
   githubUsername: "Kuthita-Richard",
 
   summary:
-    "Currently developing next-generation systems utilizing blockchain concepts for security protocols, decentralized reasoning, and machine-to-machine automated argumentation frameworks.",
-    "My name is Richard proficient in designing high-integrity systems at the convergence of Machine Learning, AI, and Web3 architectures. Specializing in advanced security and cryptographic systems, I leverage deep engineering mastery across both full-stack software architectures (Java, Next.js, TypeScript) and physical digital electronics, microprocessor infrastructure, and complex circuit design.",
+    "Currently developing next-generation systems utilizing blockchain concepts for security protocols, decentralized reasoning, and machine-to-machine automated argumentation frameworks. \n My name is Richard proficient in designing high-integrity systems at the convergence of Machine Learning, AI, and Web3 architectures. Specializing in advanced security and cryptographic systems, I leverage deep engineering mastery across both full-stack software architectures (Java, Next.js, TypeScript) and physical digital electronics, microprocessor infrastructure, and complex circuit design.",
 
   skills: {
     languages: ["Java", "TypeScript", "JavaScript", "Python (learning)", "Solidity (learning)"],
