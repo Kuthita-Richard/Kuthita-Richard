@@ -1,0 +1,12 @@
+# Richard Kuthita M.
+
+> Software developer based in Maseno, Kenya, studying Computer Science and Technology at Maseno University. Works across Java, Next.js/React/TypeScript frontend engineering, and enterprise (ERP) systems, with growing focus on AI/ML and Web3.
+
+Key pages:
+
+- [Profile](https://www.richardkuthita.com/): Background, skills, education, and experience.
+- [Projects](https://www.richardkuthita.com/projects): Live feed of public GitHub repositories.
+- [Updates](https://www.richardkuthita.com/updates): Certifications, project screenshots, and career milestones.
+- [Testimonials](https://www.richardkuthita.com/testimonials): What people say about working with Richard.
+- [Hire Me](https://www.richardkuthita.com/hire-me): Engagement types and role interests for potential employers/clients.
+- [Resume (PDF)](https://www.richardkuthita.com/api/resume): Auto-generated ATS-friendly resume.

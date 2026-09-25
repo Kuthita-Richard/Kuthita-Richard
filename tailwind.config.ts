@@ -25,13 +25,22 @@ const config: Config = {
         "dk-ink":     "#E2E8F5",
         "dk-slate":   "#8896AA",
         "dk-navy":    "#4A7FD4",
+        // Darker variant of dk-navy for white-on-navy filled buttons — the
+        // base dk-navy is 3.97:1 with white text (fails WCAG AA); this hits
+        // ~4.65:1 while staying close to the original hue.
+        "dk-navy-btn": "#376EC4",
         "dk-line":    "#162840",
         "dk-trace":   "#D4B05C",
+        // Darker gold for small body text on the light "paper" background —
+        // the base "trace" gold (#C9A24B) is ~2.25:1 there and fails WCAG AA;
+        // this hits 4.5:1+. Keep using "trace" for borders/icons/accents,
+        // where contrast rules don't apply.
+        "trace-text": "#8C6D2C",
       },
       fontFamily: {
-        display: ['"Space Grotesk"', "sans-serif"],
-        body:    ['"Inter"', "sans-serif"],
-        mono:    ['"JetBrains Mono"', "monospace"],
+        display: ["var(--font-display)", "sans-serif"],
+        body:    ["var(--font-body)", "sans-serif"],
+        mono:    ["var(--font-mono)", "monospace"],
       },
       animation: {
         "fade-in": "fadeIn 0.2s ease",
