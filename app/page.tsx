@@ -9,7 +9,7 @@ export default function Home() {
       {/* Hero */}
       <section className="py-12 sm:py-20 flex flex-col-reverse sm:flex-row gap-8 sm:items-center sm:justify-between">
         <div className="flex-1">
-          <p className="font-mono text-xs uppercase tracking-widest text-trace dark:text-dk-trace">
+          <p className="font-mono text-xs uppercase tracking-widest text-trace-text dark:text-dk-trace">
             {profile.location}
           </p>
           <h1 className="mt-3 font-display text-3xl sm:text-5xl font-bold leading-tight text-navy-deep dark:text-dk-ink">
@@ -20,7 +20,7 @@ export default function Home() {
             {profile.summary}
           </p>
           <div className="mt-8 flex flex-wrap gap-3 font-mono text-sm">
-            <a href="/api/resume" className="rounded border border-navy-deep dark:border-dk-navy bg-navy-deep dark:bg-dk-navy px-4 py-2.5 text-white hover:bg-navy dark:hover:opacity-90 transition-colors">
+            <a href="/api/resume" className="rounded border border-navy-deep dark:border-dk-navy-btn bg-navy-deep dark:bg-dk-navy-btn px-4 py-2.5 text-white hover:bg-navy dark:hover:opacity-90 transition-colors">
               Download ATS Resume (PDF)
             </a>
             <a href="/hire-me" className="rounded border border-navy-deep dark:border-dk-navy px-4 py-2.5 text-navy-deep dark:text-dk-navy hover:bg-navy-deep dark:hover:bg-dk-navy hover:text-white transition-colors">
@@ -71,7 +71,7 @@ export default function Home() {
         <div className="mt-8 space-y-4">
           {profile.education.map((e) => (
             <div key={e.school} className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
-              <p className="font-mono text-sm text-trace dark:text-dk-trace shrink-0">{e.period}</p>
+              <p className="font-mono text-sm text-trace-text dark:text-dk-trace shrink-0">{e.period}</p>
               <div>
                 <p className="font-display font-bold text-navy-deep dark:text-dk-ink">{e.school}</p>
                 <p className="text-sm text-slate dark:text-dk-slate">{e.detail}</p>

@@ -1,6 +1,10 @@
 // Central source of truth for Richard's profile. Update this file and both
 // the website and the auto-generated ATS resume PDF stay in sync.
 
+// Single source of truth for the live domain. Every metadata block, the
+// sitemap, and robots.txt should reference this instead of hardcoding a URL.
+export const siteUrl = "https://www.richardkuthita.com";
+
 export const profile = {
   name: "Richard Kuthita M.",
   tagline: "Computer Technology Engineer | Java Engineer | Frontend Developer",
