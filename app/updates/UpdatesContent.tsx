@@ -64,7 +64,7 @@ export default function UpdatesContent() {
                       key={src}
                       src={src}
                       alt={entry.title}
-                      className="aspect-video w-full cursor-zoom-in rounded border border-line dark:border-dk-line object-cover"
+                      className={`w-full cursor-zoom-in rounded border border-line dark:border-dk-line ${entry.imageFit === "contain" ? "aspect-[3/4] bg-white object-contain" : "aspect-video object-cover"}`}
                       onClick={() => setLightbox(src)}
                       loading="lazy"
                     />

@@ -34,7 +34,7 @@ export default function TestimonialsList() {
 
       {state && !state.error && state.testimonials.length === 0 && (
         <div className="rounded border border-line dark:border-dk-line bg-surface dark:bg-dk-surface p-4 text-sm text-slate dark:text-dk-slate">
-          No testimonials published yet — be the first to leave one below.
+          No testimonials published yet. Be the first to leave one below.
         </div>
       )}
 

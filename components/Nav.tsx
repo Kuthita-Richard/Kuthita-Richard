@@ -7,6 +7,7 @@ import { useTheme } from "./ThemeProvider";
 const links = [
   { href: "/", label: "Profile" },
   { href: "/projects", label: "Projects" },
+  { href: "/experience", label: "Experience" },
   { href: "/updates", label: "Updates" },
   { href: "/testimonials", label: "Testimonials" },
   { href: "/hire-me", label: "Hire Me" },
@@ -69,7 +70,7 @@ export default function Nav() {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden md:flex items-center gap-1">
+        <nav className="hidden lg:flex items-center gap-1">
           {links.map((l) => (
             <Link key={l.href} href={l.href} className={linkClass(l.href)} aria-current={pathname === l.href ? "page" : undefined}>
               {l.label}
@@ -92,7 +93,7 @@ export default function Nav() {
         </nav>
 
         {/* Mobile controls */}
-        <div className="flex md:hidden items-center gap-2">
+        <div className="flex lg:hidden items-center gap-2">
           <button onClick={toggle} aria-label="Toggle theme" className="p-2 rounded text-slate dark:text-dk-slate">
             {theme === "dark" ? <SunIcon /> : <MoonIcon />}
           </button>
@@ -104,7 +105,7 @@ export default function Nav() {
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden border-t border-line dark:border-dk-line bg-paper dark:bg-dk-bg px-4 py-4 animate-fade-in">
+        <div className="lg:hidden border-t border-line dark:border-dk-line bg-paper dark:bg-dk-bg px-4 py-4 animate-fade-in">
           <nav className="flex flex-col gap-1">
             {links.map((l) => (
               <Link key={l.href} href={l.href} className={linkClass(l.href)} onClick={() => setOpen(false)}>

@@ -88,8 +88,27 @@ function ResumeDocument() {
           <Text style={styles.heading}>Professional Competencies</Text>
           {profile.competencies.map((c) => (
             <Text key={c.title} style={styles.bullet}>
-              • {c.title} — {c.detail}
+              • {c.title}: {c.detail}
             </Text>
+          ))}
+        </View>
+
+        {/* Experience */}
+        <View style={styles.section}>
+          <Text style={styles.heading}>Experience</Text>
+          {profile.experience.map((job) => (
+            <View key={job.organization} style={{ marginBottom: 6 }}>
+              <Text style={styles.itemTitle}>{job.organization}</Text>
+              <Text style={styles.itemMeta}>
+                {job.role} | {job.location} | {job.period}
+              </Text>
+              <Text style={styles.paragraph}>{job.summary}</Text>
+              {job.highlights.map((h) => (
+                <Text key={h} style={styles.bullet}>
+                  • {h}
+                </Text>
+              ))}
+            </View>
           ))}
         </View>
 

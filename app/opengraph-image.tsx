@@ -2,7 +2,7 @@ import { renderOgImage, ogSize, ogContentType } from "@/lib/og";
 import { profile } from "@/data/profile";
 
 export const runtime = "edge";
-export const alt = `${profile.name} — ${profile.tagline}`;
+export const alt = `${profile.name} | ${profile.tagline}`;
 export const size = ogSize;
 export const contentType = ogContentType;
 

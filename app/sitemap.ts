@@ -6,6 +6,7 @@ import { siteUrl } from "@/data/profile";
 const routes: { path: string; changeFrequency: MetadataRoute.Sitemap[number]["changeFrequency"]; priority: number }[] = [
   { path: "", changeFrequency: "weekly", priority: 1.0 },
   { path: "/projects", changeFrequency: "weekly", priority: 0.8 },
+  { path: "/experience", changeFrequency: "monthly", priority: 0.8 },
   { path: "/updates", changeFrequency: "weekly", priority: 0.8 },
   { path: "/testimonials", changeFrequency: "weekly", priority: 0.6 },
   { path: "/hire-me", changeFrequency: "monthly", priority: 0.7 },

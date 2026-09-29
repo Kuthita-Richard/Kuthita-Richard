@@ -6,6 +6,7 @@ Key pages:
 
 - [Profile](https://www.richardkuthita.com/): Background, skills, education, and experience.
 - [Projects](https://www.richardkuthita.com/projects): Live feed of public GitHub repositories.
+- [Experience](https://www.richardkuthita.com/experience): Work experience, including ICT and data support at Reliable Healthcare Masinga.
 - [Updates](https://www.richardkuthita.com/updates): Certifications, project screenshots, and career milestones.
 - [Testimonials](https://www.richardkuthita.com/testimonials): What people say about working with Richard.
 - [Hire Me](https://www.richardkuthita.com/hire-me): Engagement types and role interests for potential employers/clients.

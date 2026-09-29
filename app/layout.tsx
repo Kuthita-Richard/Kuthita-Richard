@@ -29,8 +29,8 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: `${profile.name} — ${profile.tagline}`,
-  description: profile.summary,
+  title: `${profile.name} | ${profile.tagline}`,
+  description: profile.metaDescription,
   keywords: [
     "Richard Kuthita",
     "Richard",
@@ -55,16 +55,16 @@ export const metadata: Metadata = {
     canonical: siteUrl,
   },
   openGraph: {
-    title: `${profile.name} — ${profile.tagline}`,
-    description: profile.summary,
+    title: `${profile.name} | ${profile.tagline}`,
+    description: profile.metaDescription,
     url: siteUrl,
     siteName: profile.name,
     type: "profile",
   },
   twitter: {
     card: "summary_large_image",
-    title: `${profile.name} — ${profile.tagline}`,
-    description: profile.summary,
+    title: `${profile.name} | ${profile.tagline}`,
+    description: profile.metaDescription,
   },
   robots: {
     index: true,
@@ -99,9 +99,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Person",
-              name: profile.name,
+              "@id": `${siteUrl}/#person`,
+              name: "Richard Kuthita",
+              alternateName: profile.alternateNames,
+              givenName: "Richard",
+              additionalName: "Mutinda",
+              familyName: "Kuthita",
               jobTitle: profile.tagline,
               url: siteUrl,
+              mainEntityOfPage: siteUrl,
+              alumniOf: { "@type": "CollegeOrUniversity", name: "Maseno University" },
+              knowsAbout: ["Java", "TypeScript", "Next.js", "React", "Power BI", "Microsoft Excel"],
+              address: { "@type": "PostalAddress", addressLocality: "Maseno", addressCountry: "KE" },
               image: `${siteUrl}/profile.png`,
               description: profile.summary,
               location: {
@@ -126,9 +135,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              name: `${profile.name} — Portfolio`,
+              name: "Richard Kuthita",
+              alternateName: [...profile.alternateNames, "richardkuthita.com"],
               url: siteUrl,
-              author: { "@type": "Person", name: profile.name },
+              author: { "@id": `${siteUrl}/#person` },
             }),
           }}
         />

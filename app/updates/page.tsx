@@ -4,11 +4,12 @@ import UpdatesContent from "./UpdatesContent";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Updates — Richard Kuthita",
-  description: `Project screenshots, career milestones, and updates from ${profile.name} — including UI work not hosted on GitHub.`,
+  title: "Updates | Richard Kuthita",
+  description: `Project screenshots, career milestones, and updates from ${profile.name}, including UI work not hosted on GitHub.`,
   keywords: ["updates", "portfolio", "screenshots", "milestones", "bootcamp", "UI work"],
+  alternates: { canonical: "/updates" },
   openGraph: {
-    title: "Updates — Richard Kuthita",
+    title: "Updates | Richard Kuthita",
     description: `Project screenshots and career updates from ${profile.name}.`,
     url: `${siteUrl}/updates`,
   },
