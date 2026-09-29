@@ -7,6 +7,14 @@ export const siteUrl = "https://www.richardkuthita.com";
 
 export const profile = {
   name: "Richard Kuthita M.",
+  // Name variants, so search engines connect "Kuthita", "Mutinda Richard
+  // Kuthita" and "Richard Kuthita M." to the same person. Add any others you
+  // are commonly searched by.
+  fullName: "Mutinda Richard Kuthita",
+  alternateNames: ["Mutinda Richard Kuthita", "Richard Kuthita M."],
+  // Short (<=160 chars) description for search-result snippets and link previews.
+  metaDescription:
+    "Richard Kuthita (Mutinda Richard Kuthita): software developer in Maseno, Kenya. Java, Next.js, React, TypeScript. Computer Science student, Maseno University.",
   tagline: "Computer Technology Engineer | Java Engineer | Frontend Developer",
   location: "Maseno, Kenya",
   phone: "+254 742 450 802",
@@ -17,7 +25,7 @@ export const profile = {
 
   summary:
     `Currently developing next-generation systems utilizing blockchain concepts for security protocols, decentralized reasoning, and machine-to-machine automated argumentation frameworks.
-    My name is Richard proficient in designing high-integrity systems at the convergence of Machine Learning, AI, and Web3 architectures. Specializing in advanced security and cryptographic systems, I leverage deep engineering mastery across both full-stack software architectures (Java, Next.js, TypeScript) and physical digital electronics, microprocessor infrastructure, and complex circuit design.`,
+    I am proficient in designing high-integrity systems at the convergence of Machine Learning, AI, and Web3 architectures. Specializing in advanced security and cryptographic systems, I leverage deep engineering mastery across both full-stack software architectures (Java, Next.js, TypeScript) and physical digital electronics, microprocessor infrastructure, and complex circuit design.`,
 
   skills: {
     languages: ["Java", "TypeScript", "JavaScript", "Python (learning)", "Solidity (learning)"],
@@ -93,7 +101,7 @@ export const profile = {
       description:
         "A comprehensive volunteer management and gamification platform. Mission tracking, points and rewards, a learning hub, role-based workflows, and an M-Pesa payment integration for the Equal InfraC Fund landing page.",
       highlights: [
-        "Led and coordinated a team of 3 frontend developers — task assignment, PR review, and code quality.",
+        "Led and coordinated a team of 3 frontend developers, covering task assignment, PR review, and code quality.",
         "Architected the frontend across 8 pages using the Next.js 14 App Router.",
         "Built a gamification system: points, achievement badges, leaderboard rankings, and mission difficulty tiers.",
         "Integrated M-Pesa payments into the Equal InfraC Fund landing page.",
@@ -127,8 +135,30 @@ export const profile = {
       stack: ["Java"],
       description:
         "A generic, industry-agnostic ERP system covering inventory, finance, HR, and operations for SMEs.",
-      highlights: ["Designed for cross-industry adaptability — retail, services, and logistics."],
+      highlights: ["Designed for cross-industry adaptability across retail, services, and logistics."],
       githubRepo: null,
+    },
+  ],
+
+  // Work experience. Feeds both the /experience page and the ATS resume PDF.
+  experience: [
+    {
+      organization: "Reliable Healthcare Masinga",
+      location: "Masinga, Kenya",
+      role: "Finance and Accounting Department: ICT & Data Support",
+      period: "Jun 2026 – Aug 2026",
+      summary:
+        "Worked under the direct supervision of the Finance and Accounting Department on a wide range of ICT and data-related duties for the hospital.",
+      highlights: [
+        "Entered and verified Local Purchase Orders and other records in the hospital management system.",
+        "Cleaned and organized financial spreadsheets in Microsoft Excel, using Pivot Tables and Power Query to prepare data for analysis.",
+        "Developed and improved Power BI dashboards used to present financial information to management.",
+        "Assisted with preparing official documents and forms, and downloaded and organized KRA payment history reports.",
+        "Provided general IT support, including printer and workstation troubleshooting.",
+        "Took part, under supervision, in a generator fault diagnosis exercise and a branch data collection exercise.",
+        "Received a written recommendation from supervisor Mr. Reuben Ngui, citing reliability, attention to detail, and handling of confidential financial and healthcare information.",
+      ],
+      letter: "/updates/reliable-healthcare/recommendation-letter.pdf",
     },
   ],
 
@@ -136,7 +166,7 @@ export const profile = {
     {
       school: "Maseno University",
       period: "2023 – Present",
-      detail: "Bachelor of Science (BSc.) in Computer Science and Technology — Expected Graduation: 2027",
+      detail: "Bachelor of Science (BSc.) in Computer Science and Technology, expected graduation 2027",
     },
   ],
 
@@ -176,7 +206,7 @@ export const roleGroups = [
       {
         id: "java-erp",
         title: "Java ERP Developer / Consultant",
-        blurb: "Implementing and customizing ERP modules — inventory, finance, HR, operations.",
+        blurb: "Implementing and customizing ERP modules across inventory, finance, HR, and operations.",
       },
       {
         id: "enterprise-engineer",
@@ -201,7 +231,7 @@ export const roleGroups = [
     ],
   },
   {
-    track: "Growth Track — AI, ML & Web3",
+    track: "Growth Track: AI, ML & Web3",
     roles: [
       {
         id: "ai-ml-engineer",
@@ -215,8 +245,8 @@ export const roleGroups = [
       },
       {
         id: "decentralized-reasoning",
-        title: "Research Assistant — Decentralized Reasoning Systems",
-        blurb: "Exploratory work at the intersection of AI, ML, and Web3 — the future of decentralized learning models.",
+        title: "Research Assistant: Decentralized Reasoning Systems",
+        blurb: "Exploratory work at the intersection of AI, ML, and Web3, exploring the future of decentralized learning models.",
       },
     ],
   },
@@ -236,6 +266,6 @@ export const contractTypes = [
   {
     id: "freelance",
     title: "Freelance / Project-based",
-    blurb: "A scoped, milestone-driven project — ideal for MVPs, feature builds, or one-time deliverables.",
+    blurb: "A scoped, milestone-driven project, ideal for MVPs, feature builds, or one-time deliverables.",
   },
 ];

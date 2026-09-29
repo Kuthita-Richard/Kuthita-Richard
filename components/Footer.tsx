@@ -16,7 +16,7 @@ export default function Footer() {
       </div>
       <div className="trace-line mx-auto max-w-5xl" />
       <p className="px-6 py-4 text-center font-mono text-[11px] text-slate dark:text-dk-slate">
-        © {new Date().getFullYear()} {profile.name} — Built with Next.js 16
+        © {new Date().getFullYear()} {profile.name} ({profile.fullName}) · Built with Next.js 16
       </p>
     </footer>
   );

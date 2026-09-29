@@ -15,11 +15,27 @@ export type UpdateEntry = {
   description: string;
   /** Paths under /public, e.g. "/updates/my-entry/screenshot-1.png" */
   images: string[];
+  /** "contain" shows tall documents (letters, certificates) uncropped. Default "cover". */
+  imageFit?: "cover" | "contain";
   tags?: string[];
   links?: { label: string; url: string }[];
 };
 
 export const updates: UpdateEntry[] = [
+  {
+    id: "reliable-healthcare-attachment",
+    title: "Recommendation from Reliable Healthcare Masinga",
+    date: "2026-08-27",
+    type: "milestone",
+    description:
+      "From 26 June to 27 August 2026 I was part of the Finance and Accounting Department at Reliable Healthcare Masinga, handling hospital management system records, cleaned and organized financial spreadsheets with Excel Pivot Tables and Power Query, developed and improved Power BI dashboards for management reporting, and provided general IT support. My supervisor, Mr. Reuben Ngui, wrote a recommendation letter.",
+    images: ["/updates/reliable-healthcare/recommendation-letter.jpg"],
+    imageFit: "contain",
+    tags: ["Power BI", "Excel", "Power Query", "recommendation"],
+    links: [
+      { label: "Download letter (PDF)", url: "/updates/reliable-healthcare/recommendation-letter.pdf" },
+    ],
+  },
   {
     id: "welcome",
     title: "Updates channel is live",

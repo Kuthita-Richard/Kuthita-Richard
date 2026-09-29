@@ -29,7 +29,7 @@ export default function HireMeContent() {
   return (
     <>
       <p className="mt-3 max-w-2xl text-sm sm:text-base text-slate dark:text-dk-slate">
-        Build a quick spec of what you need — choose an engagement type and the role(s) that fit. The summary updates live and you can send it straight to me.
+        Build a quick spec of what you need: choose an engagement type and the role(s) that fit. The summary updates live and you can send it straight to me.
       </p>
       <div className="trace-line mt-6" />
 

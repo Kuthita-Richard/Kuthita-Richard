@@ -4,11 +4,12 @@ import ProjectsContent from "./ProjectsContent";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Projects — Richard Kuthita",
+  title: "Projects | Richard Kuthita",
   description: `Portfolio of ${profile.name}'s projects including ${profile.skills.frontend.join(", ")} work. View all GitHub repositories and technical work.`,
   keywords: ["projects", "portfolio", "GitHub", "React", "Next.js", "TypeScript", "full stack"],
+  alternates: { canonical: "/projects" },
   openGraph: {
-    title: "Projects — Richard Kuthita",
+    title: "Projects | Richard Kuthita",
     description: `Portfolio of ${profile.name}'s projects and technical work.`,
     url: `${siteUrl}/projects`,
   },

@@ -4,11 +4,12 @@ import HireMeContent from "./HireMeContent";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Hire Me — Richard Kuthita",
+  title: "Hire Me | Richard Kuthita",
   description: `Hire ${profile.name} for your next project. Select engagement type and role preferences. Java Developer, Frontend Developer, Full Stack Engineer.`,
   keywords: ["hire", "freelance", "contract", "Java developer", "frontend developer", "React developer"],
+  alternates: { canonical: "/hire-me" },
   openGraph: {
-    title: "Hire Me — Richard Kuthita",
+    title: "Hire Me | Richard Kuthita",
     description: `Hire ${profile.name} for your next project. Discuss engagement opportunities.`,
     url: `${siteUrl}/hire-me`,
   },

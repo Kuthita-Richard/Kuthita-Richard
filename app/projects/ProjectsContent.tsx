@@ -18,7 +18,7 @@ export default function ProjectsContent() {
         <a className="font-mono text-navy dark:text-dk-navy hover:text-trace dark:hover:text-dk-trace transition-colors" href={`https://${profile.github}`} target="_blank" rel="noreferrer">
           {profile.github}
         </a>
-        . New repositories appear automatically — nothing on this page is hardcoded.
+        . New repositories appear automatically; nothing on this page is hardcoded.
       </p>
       <div className="trace-line mt-6" />
 
